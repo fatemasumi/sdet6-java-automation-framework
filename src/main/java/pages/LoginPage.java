@@ -50,6 +50,6 @@ public class LoginPage {
     }
     public void verifyRobotImage(){
         System.out.println("Robot image is displayed");
-        boolean result = driver.findElement(robotImage).isDisplayed();
+        boolean isVerified = driver.findElement(robotImage).isDisplayed();
     }
 }
