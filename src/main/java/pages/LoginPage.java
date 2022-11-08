@@ -1,5 +1,6 @@
 package pages;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -44,7 +45,8 @@ public class LoginPage {
     }
     public void verifyLogoImage(){
         System.out.println("Verify Logo on login page");
-        driver.findElement(logoImage).isDisplayed();
+        boolean isVerified = driver.findElement(logoImage).isDisplayed();
+        //Assert.assertTrue(isVerified);
     }
     public void verifyRobotImage(){
         System.out.println("Robot image is displayed");
