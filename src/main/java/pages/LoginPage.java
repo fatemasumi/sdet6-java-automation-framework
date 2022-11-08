@@ -8,11 +8,11 @@ public class LoginPage {
     //locators
     WebDriver driver = new ChromeDriver();
 
-    String userNameTextBoxIdLocator = "user-name";
-    String passWordTextBoxIdLocator = "password";
-    String loginButtonIdLocator = "login-button";
-    String logoImageXpathLocator = "//*[@id=\"root\"]/div/div[1]";
-    String robotImageXpathLocator = "//*[@id=\"root\"]/div/div[2]/div[1]/div[2]";
+//    String userNameTextBoxIdLocator = "user-name";
+//    String passWordTextBoxIdLocator = "password";
+//    String loginButtonIdLocator = "login-button";
+//    String logoImageXpathLocator = "//*[@id=\"root\"]/div/div[1]";
+//    String robotImageXpathLocator = "//*[@id=\"root\"]/div/div[2]/div[1]/div[2]";
 
     //by type
     By userNameTextBox = By.id("user-name");
@@ -30,7 +30,7 @@ public class LoginPage {
 
     public void enterUserName(String username){
         System.out.println("Enter username" + username);
-        driver.findElement(By.id(userNameTextBoxIdLocator)).sendKeys(username);
+        //driver.findElement(By.id(userNameTextBoxIdLocator)).sendKeys(username);
         //by type
         driver.findElement(userNameTextBox).sendKeys(username);
     }
