@@ -43,12 +43,12 @@ public class LoginPage {
         System.out.println("Click login button");
         driver.findElement(loginButton).click();
     }
-    public void verifyLogoImage(){
+    public void verifyLogoImageIsVisible(){
         System.out.println("Verify Logo on login page");
         boolean isVerified = driver.findElement(logoImage).isDisplayed();
         //Assert.assertTrue(isVerified);
     }
-    public void verifyRobotImage(){
+    public void verifyRobotImageIsVisible(){
         System.out.println("Robot image is displayed");
         boolean isVerified = driver.findElement(robotImage).isDisplayed();
     }
